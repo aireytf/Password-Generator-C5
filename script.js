@@ -100,7 +100,7 @@ function getPasswordOptions() {
     return;
 }
 
-  /* Ask user for character types */
+  /* Asking user for character types */
   var includeLower = confirm("Include lowercase characters?");
   var includeUpper = confirm("Include uppercase characters?");
   var includeNumeric = confirm("Include numeric characters?");
@@ -121,7 +121,7 @@ return passwordOptions;
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
 // Function to generate password with user input
