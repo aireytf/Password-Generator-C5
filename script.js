@@ -164,6 +164,8 @@ function generatePassword() {
     guaranteedCharacters.push(randomChar);
   }
 
+  /* Shuffling the generated characters, to provide more randomised passwords. */
+  guaranteedCharacters = guaranteedCharacters.sort(() => Math.random() - 0.5);
 
   return guaranteedCharacters.join('');
 
