@@ -22,7 +22,7 @@ My modified code was required to meet the following criteria:
 
 My final application was to resemble the following Demo: 
 
-![Demo1](/Images/Screenshot.png)
+![Demo1](/Images/05-javascript-challenge-demo.png)
 
 ## Table of Contents 
 
