@@ -106,6 +106,12 @@ function getPasswordOptions() {
   var includeNumeric = confirm("Include numeric characters?");
   var includeSpecial = confirm("Include special characters?");
 
+  /* Added to check if at least one character type is selected (and provide an alert, if not) */
+  if (!includeLower && !includeUpper && !includeNumeric && !includeSpecial) {
+    alert("Please select at least one character type.");
+    return;
+  }
+
 /* Store user input in an object */
 var passwordOptions = {
   length: length,
