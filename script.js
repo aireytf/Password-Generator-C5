@@ -94,13 +94,28 @@ function getPasswordOptions() {
   /* Variable for password length */
   var length = parseInt(prompt("Enter the length of the password (must be between 8 and 128 characters):"));
 
-  /* Check if length is a valid number */
+  /* Check if length is a valid number (within the specified range) */
   if (isNaN(length) || length < 8 || length > 128) {
     alert("Please enter a valid number between 8 and 128.");
     return;
 }
 
-  return passwordOptions;
+  /* Ask user for character types */
+  var includeLower = confirm("Include lowercase characters?");
+  var includeUpper = confirm("Include uppercase characters?");
+  var includeNumeric = confirm("Include numeric characters?");
+  var includeSpecial = confirm("Include special characters?");
+
+/* Store user input in an object */
+var passwordOptions = {
+  length: length,
+  includeLower: includeLower,
+  includeUpper: includeUpper,
+  includeNumeric: includeNumeric,
+  includeSpecial: includeSpecial
+};
+
+return passwordOptions;
 
 }
 
