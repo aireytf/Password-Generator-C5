@@ -156,6 +156,15 @@ function generatePassword() {
     guaranteedCharacters.push(getRandom(specialCharacters));
   }
 
+  /* Needed to fill in enough characters to meet desired password length, after one of each specified character type has been used. */
+  var remainingLength = options.length - guaranteedCharacters.length;
+
+  for (var i = 0; i < remainingLength; i++) {
+    var randomChar = getRandom(possibleCharacters);
+    guaranteedCharacters.push(randomChar);
+  }
+
+
   return guaranteedCharacters.join('');
 
 }
