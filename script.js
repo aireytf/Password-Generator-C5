@@ -126,6 +126,37 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
+  
+  var options = getPasswordOptions();
+
+  if (!options) {
+    return; /* User canceled or provided invalid input. */
+  }
+
+  var possibleCharacters = [];
+  var guaranteedCharacters = [];
+
+  if (options.includeLower) {
+    possibleCharacters.push(...lowerCasedCharacters);
+    guaranteedCharacters.push(getRandom(lowerCasedCharacters));
+  }
+
+  if (options.includeUpper) {
+    possibleCharacters.push(...upperCasedCharacters);
+    guaranteedCharacters.push(getRandom(upperCasedCharacters));
+  }
+
+  if (options.includeNumeric) {
+    possibleCharacters.push(...numericCharacters);
+    guaranteedCharacters.push(getRandom(numericCharacters));
+  }
+
+  if (options.includeSpecial) {
+    possibleCharacters.push(...specialCharacters);
+    guaranteedCharacters.push(getRandom(specialCharacters));
+  }
+
+  return guaranteedCharacters.join('');
 
 }
 
