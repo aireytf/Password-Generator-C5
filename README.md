@@ -8,7 +8,7 @@ This was a real-world situation challenge, tasking me with modifying JavaScript 
 
 My modified code was required to meet the following criteria:
 
-- Generate a password when the button is clicked.
+- Generate a password when the relevant button is clicked.
   
 - Present a series of prompts for password criteria.
   
