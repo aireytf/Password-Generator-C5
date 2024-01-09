@@ -32,13 +32,11 @@ My final application was to resemble the following Demo:
 
 ## Usage
 
-To view my work on this challenge, you can review the sections of this repository, and my delpoyed site which is at https://aireytf.github.io/Password-Generator-C5/ 
-
-To review the calculations resulting from my JavaScript code, on the deployed site referenced above, open the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser. There you can navigate to the console header and view the calculations. 
+To view my work on this challenge, you can review the sections of this repository, and my delpoyed site which can be found at https://aireytf.github.io/Password-Generator-C5/ 
 
 ## Credits
 
-I researched the elements needed to write this JavaScript code, utlising such resources as w3schools.com, mdn web docs, and stackoverflow.com
+I researched some elements needed to write this JavaScript code, utlising such resources as w3schools.com, mdn web docs, and stackoverflow.com
 
 ## License
 
